@@ -9,7 +9,9 @@ This repository provides reproducible code and data resources for a cardiovascul
 - **Repository name:** `Heart-Failure-Manuscript`
 - **Repository type:** Jupyter Notebook research repository
 - **Repository link:** https://github.com/Agyemang1z/Heart-Failure-Manuscript
-- **Primary author:** Edmund Fosu Agyemang
+- **Authors:** Farhana Chaudhry, Edmund Fosu Agyemang, Daniela Candanedo, Taylor Franks, Bailey Taylor, Kevin Siliezar, Desmond Yemeh, Ema Akter, Adeshola Lawal,
+ Samuel Assefa, and Samuel Kakraba 
+
 - **Academic identifier:** ORCID: https://orcid.org/0000-0001-8124-4493
 
 ## Repository Contents
@@ -82,7 +84,7 @@ The data and code are provided for scholarly, educational, and reproducibility p
 
 ## Suggested Citation
 
-Agyemang, E. F. (n.d.). *Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction* [Source code and data]. GitHub. https://github.com/Agyemang1z/Heart-Failure-Manuscript
+Farhana Chaudhry et al. (2026). *Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction* [Source code and data]. GitHub. https://github.com/Agyemang1z/Heart-Failure-Manuscript
 
 
 ## Keywords
