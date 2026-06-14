@@ -91,5 +91,3 @@ Cardiovascular disease, Heart failure, Machine learning, Explainable AI, SHAP, E
 
 ## Disclaimer
 This repository is intended to support reproducible research. The code and outputs should not be used as a substitute for professional clinical, financial, legal, electoral, or policy judgment.
-
-This repository is intended to support reproducible research. The code and outputs should not be used as a substitute for professional clinical, financial, legal, electoral, or policy judgment.
