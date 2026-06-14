@@ -54,8 +54,6 @@ Recommended software and packages include:
 - lightgbm
 - catboost
 
-Package versions should be recorded before manuscript submission. Where possible, add a `requirements.txt`, `environment.yml`, `renv.lock`, or `sessionInfo()` output to improve reproducibility.
-
 ## Reproducibility Guide
 
 Run the project from a clean working directory. The following commands provide a suggested starting point:
