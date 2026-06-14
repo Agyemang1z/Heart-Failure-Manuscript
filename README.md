@@ -1,13 +1,95 @@
-Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction
+# Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction
 
-Background: Cardiovascular disease remains a leading cause of morbidity and mortality worldwide, representing a major public health challenge. Accurate early prediction of adverse cardiovascular outcomes is essential for timely clinical intervention, improved risk stratification, and better patient management. However, predictive models must demonstrate not only strong internal performance but also stability when evaluated on external clinical data.
+## Overview
 
-Objective: To develop and evaluate multiple machine learning (ML) algorithms for cardiovascular disease prediction, enhance model interpretability using explainable artificial intelligence (XAI) techniques, and externally validate the robustness of the optimized models on an independent cardiovascular dataset.
+This repository provides reproducible code and data resources for a cardiovascular disease prediction study using machine learning, explainable artificial intelligence, and external validation. The analysis evaluates multiple supervised learning algorithms for heart failure prediction and examines whether optimized models retain acceptable performance when applied to an independent cardiovascular dataset.
 
-Methods: Nine machine learning algorithms, including logistic regression, Random Forest, Extra Trees, Gradient Boosting, AdaBoost, SVC, XGBoost, LightGBM, and CatBoost, were applied to predict heart failure using the publicly available UCI Heart Failure Clinical Records dataset. Model development was conducted using optimized hyperparameters and cross-validation procedures. The SHapley Additive exPlanations framework was used to quantify the contribution of clinical features to model predictions. To assess generalizability, the optimized models were further evaluated on an external Cardiovascular dataset. External validation performance was assessed using testing accuracy, cross-validation accuracy mean, accuracy generalization gap (AGG), and fault-based metrics.
+## Repository
 
-Results: In the initial heart failure prediction task, LightGBM achieved the highest AUC-ROC of 0.8731 and AUC-PR of 0.8412, while all other classifiers produced AUC-ROC and AUC-PR values above 0.80, indicating strong discriminative performance. SHAP analysis identified time, serum creatinine, creatinine phosphokinase, and ejection fraction as the most influential predictors of survival. During external validation on the Cardiovascular dataset, CatBoost achieved the strongest overall performance, with the highest testing accuracy of 0.7382, cross-validation accuracy mean of 0.7339, F1-score of 0.7282, AUC of 0.8029, and average precision of 0.7905. The AGGs were consistently small across all models, ranging from 0.0025 to 0.0051, suggesting limited overfitting and stable transfer of predictive performance to the external dataset.
+- **Repository name:** `Heart-Failure-Manuscript`
+- **Repository type:** Jupyter Notebook research repository
+- **Repository link:** https://github.com/Agyemang1z/Heart-Failure-Manuscript
+- **Primary author:** Edmund Fosu Agyemang
+- **Academic identifier:** ORCID: https://orcid.org/0000-0001-8124-4493
 
-Conclusion: Boosting-based classifiers demonstrated strong predictive performance for heart failure prediction and retained acceptable external validity when applied to a broader cardiovascular disease prediction task. LightGBM showed the strongest internal discrimination in the initial heart failure dataset, whereas CatBoost achieved the best overall performance during external validation. The SHAP-based interpretability findings highlighted clinically meaningful predictors of survival, while the external validation results supported the robustness and potential clinical applicability of the proposed modelling framework. These findings emphasize the value of combining optimized ML, XAI, and external validation to support reliable cardiovascular risk prediction.
+## Repository Contents
 
-Keywords: Heart Failure, Artificial Intelligence (AI), Explainable AI (XAI), Machine Learning (ML), Light Gradient Boosting, Adaptive Boosting, SHAP Analysis, Model interpretability, Risk stratification, Clinical decision support, Ejection fraction, Serum creatinine.
+The public repository listing identifies the following files:
+
+- `Cardio.csv`
+- `Heart Failure.ipynb`
+- `README.md`
+- `heart failure dataset.csv`
+
+## Research Objectives
+
+- Develop and compare supervised machine learning models for cardiovascular disease prediction.
+- Use explainable artificial intelligence to identify clinically relevant predictors.
+- Assess external validity using a separate cardiovascular dataset.
+- Provide transparent computational materials that support manuscript reproducibility.
+
+## Analytical Workflow
+
+1. Load and inspect the heart failure and external cardiovascular datasets.
+2. Preprocess clinical variables and define the target outcome.
+3. Train and evaluate logistic regression, tree-based models, support vector machine, and boosting algorithms.
+4. Estimate model performance using discrimination, classification, and validation metrics.
+5. Use SHAP-based interpretation to assess the contribution of clinical predictors.
+6. Compare internal model performance with external validation results.
+
+## Software Requirements
+
+Recommended software and packages include:
+
+- Python 3.10 or later
+- Jupyter Notebook or JupyterLab
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- shap
+- xgboost
+- lightgbm
+- catboost
+
+Package versions should be recorded before manuscript submission. Where possible, add a `requirements.txt`, `environment.yml`, `renv.lock`, or `sessionInfo()` output to improve reproducibility.
+
+## Reproducibility Guide
+
+Run the project from a clean working directory. The following commands provide a suggested starting point:
+
+```bash
+git clone https://github.com/Agyemang1z/Heart-Failure-Manuscript.git
+cd Heart-Failure-Manuscript
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install pandas numpy scikit-learn matplotlib shap xgboost lightgbm catboost jupyter
+jupyter notebook "Heart Failure.ipynb"
+```
+
+If file names include spaces, keep quotation marks around the file name when launching notebooks or scripts from the terminal.
+
+## Expected Outputs
+
+- Model comparison tables
+- Performance metrics for internal and external validation
+- Feature importance and SHAP interpretation outputs
+- Figures and tables suitable for manuscript reporting
+
+## Data Availability and Responsible Use
+
+The data and code are provided for scholarly, educational, and reproducibility purposes. Users should verify the original data source, data license, and any use restrictions before redistribution or secondary analysis. When the dataset contains human, health, financial, or election-related information, results should be interpreted responsibly and reported with appropriate methodological caution.
+
+## Suggested Citation
+
+Agyemang, E. F. (n.d.). *Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction* [Source code and data]. GitHub. https://github.com/Agyemang1z/Heart-Failure-Manuscript
+
+
+## Keywords
+
+Cardiovascular disease, Heart failure, Machine learning, Explainable AI, SHAP, External validation
+
+## Disclaimer
+This repository is intended to support reproducible research. The code and outputs should not be used as a substitute for professional clinical, financial, legal, electoral, or policy judgment.
+
+This repository is intended to support reproducible research. The code and outputs should not be used as a substitute for professional clinical, financial, legal, electoral, or policy judgment.
