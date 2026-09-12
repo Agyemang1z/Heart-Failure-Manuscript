@@ -1,5 +1,17 @@
 # Development and External Validation of Explainable Machine Learning Models for Cardiovascular Disease Prediction
 
+Farhana Chaudhry1,a, Edmund Fosu Agyemang1,a, Daniela Candanedo2, Taylor Franks2, 
+Bailey Taylor2, Kevin Siliezar2, Desmond Yemeh1, Ema Akter1, Adeshola Lawal1,
+ Samuel Assefa1, and Samuel Kakraba 1,3,4,a*
+1Department of Biostatistics and Data Science, Celia Scott Weatherhead School of Public Health and Tropical Medicine at Tulane University, New Orleans, LA, USA
+2Department of Epidemiology, Celia Scott Weatherhead School of Public Health and Tropical Medicine at Tulane University, New Orleans, LA, USA
+3Center for Aging, School of Medicine, Tulane University, New Orleans, LA, 70112, USA
+4Conolly Alexander Institute of Data Science (CAIDS), Tulane University, New Orleans, LA, 70112, USA
+
+a These authors have contributed equally to this work. 
+
+Corresponding author: Samuel Kakraba, PhD; 1440 Canal St, New Orleans, LA 70112; skakraba@tulane.edu; 
+
 ## Overview
 
 This repository provides reproducible code and data resources for a cardiovascular disease prediction study using machine learning, explainable artificial intelligence, and external validation. The analysis evaluates multiple supervised learning algorithms for heart failure prediction and examines whether optimized models retain acceptable performance when applied to an independent cardiovascular dataset.
